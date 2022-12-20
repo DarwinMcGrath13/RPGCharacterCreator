@@ -129,52 +129,52 @@ int main()
 
 		classChoose = askNumber("", 5, 1);
 
-		switch (ancestryChoose)
+		switch (classChoose)
 		{
 		case 1:
 			player.setClass("Fighter");
-			player.strength += 18;
-			player.constitution += (rand() % 18 + 6);
-			player.dexterity += (rand() % 18 + 6);
-			player.intelligence += (rand() % 18 + 6);
-			player.wisdom += (rand() % 18 + 6);
-			player.charisma += (rand() % 18 + 6);
+			player.strength += (rand() % 9 + 10);
+			player.constitution += (rand() % 9 + 10);
+			player.dexterity += (rand() % 9 + 10);
+			player.intelligence += (rand() % 9 + 10);
+			player.wisdom += (rand() % 9 + 10);
+			player.charisma += (rand() % 9 + 10);
 			break;
 		case 2:
 			player.setClass("Rogue");
-			player.strength += (rand() % 18 + 6);
-			player.constitution += (rand() % 18 + 6);
-			player.dexterity += 18;
-			player.intelligence += (rand() % 18 + 6);
-			player.wisdom += (rand() % 18 + 6);
-			player.charisma += (rand() % 18 + 6);
+			player.strength += (rand() % 9 + 10);
+			player.constitution += (rand() % 9 + 10);
+			player.dexterity += (rand() % 9 + 10);
+			player.intelligence += (rand() % 9 + 10);
+			player.wisdom += (rand() % 9 + 10);
+			player.charisma += (rand() % 9 + 10);
 			break;
 		case 3:
 			player.setClass("Wizard");
-			player.strength += (rand() % 18 + 6);
-			player.constitution += (rand() % 18 + 6);
-			player.dexterity += (rand() % 18 + 6);
-			player.intelligence += 18;
-			player.wisdom += (rand() % 18 + 6);
-			player.charisma += (rand() % 18 + 6);
+			player.strength += (rand() % 9 + 10);
+			player.constitution += (rand() % 9 + 10);
+			player.dexterity += (rand() % 9 + 10);
+			player.intelligence += (rand() % 9 + 10);
+			player.wisdom += (rand() % 9 + 10);
+			player.charisma += (rand() % 9 + 10);
 			break;
 		case 4:
 			player.setClass("Druid");
-			player.strength += (rand() % 18 + 6);
-			player.constitution += (rand() % 18 + 6);
-			player.dexterity += (rand() % 18 + 6);
-			player.intelligence += (rand() % 18 + 6);
-			player.wisdom += 18;
-			player.charisma += (rand() % 18 + 6);
+			player.strength += (rand() % 9 + 10);
+			player.constitution += (rand() % 9 + 10);
+			player.dexterity += (rand() % 9 + 10);
+			player.intelligence += (rand() % 9 + 10);
+			player.wisdom += (rand() % 9 + 10);
+			player.charisma += (rand() % 9 + 10);
 			break;
 		case 5:
 			player.setClass("Paladin");
-			player.strength += (rand() % 18 + 6);
-			player.constitution += (rand() % 18 + 6);
-			player.dexterity += (rand() % 18 + 6);
-			player.intelligence += (rand() % 18 + 6);
-			player.wisdom += (rand() % 18 + 6);
-			player.charisma += 18;
+			player.strength += (rand() % 9 + 10);
+			player.constitution += (rand() % 9 + 10);
+			player.dexterity += (rand() % 9 + 10);
+			player.intelligence += (rand() % 9 + 10);
+			player.wisdom += (rand() % 9 + 10);
+			player.charisma += (rand() % 9 + 10);
 			break;
 		default:
 			std::cout << "Error";
@@ -184,11 +184,11 @@ int main()
 		std::cout << "\n\nYou are named " << player.getName() << ".";
 		std::cout << "\nYou are a " << player.getAncestry() << " " << player.getClass();
 		std::cout << "\nThese are your stats:";
-		std::cout << "\nSTR: " << player.strength << "\nDEX: " << player.dexterity << "\nCON: " << player.constitution << "\nINT" << player.intelligence << "\nWIS" << player.wisdom << "\nCHA" << player.charisma;
+		std::cout << "\nSTR: " << player.strength << "\nDEX: " << player.dexterity << "\nCON: " << player.constitution << "\nINT: " << player.intelligence << "\nWIS: " << player.wisdom << "\nCHA: " << player.charisma;
 
 		std::cout << "\n\nWould you like to redo or are you good with this character?\n";
-		std::cout << "\n(1) Redo";
-		std::cout << "\n(2) Confirm character\n";
+		std::cout << "\n[1] Redo";
+		std::cout << "\n[2] Confirm character\n";
 		redoChoose = askNumber("", 2, 1);
 	} while (redoChoose != 2);
 	return 0;
